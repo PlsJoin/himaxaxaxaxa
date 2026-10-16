@@ -8,36 +8,56 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Yu Gothic", "Hiragino Sans", "Meiryo", sans-serif;
-      background: #eef0f2;
-      color: #1a1a1a;
+      background: #e8eaed;
+      color: #111;
       min-height: 100vh;
       font-size: 14px;
     }
     header {
-      background: #1e293b;
+      background: #0f172a;
       color: #fff;
-      padding: 14px 20px;
+      padding: 16px 20px;
+      border-bottom: 3px solid #3b82f6;
     }
-    header h1 { font-size: 17px; font-weight: 700; letter-spacing: 0.02em; }
+    header h1 {
+      font-size: 18px;
+      font-weight: 700;
+    }
     main {
       max-width: 420px;
       margin: 0 auto;
-      padding: 28px 16px;
+      padding: 28px 16px 40px;
+    }
+    .intro {
+      background: #fff;
+      border: 1px solid #c5c9d0;
+      padding: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      font-size: 13px;
+      color: #334155;
+    }
+    .intro p {
+      margin-bottom: 6px;
+    }
+    .intro p:last-child {
+      margin-bottom: 0;
     }
     .menu a {
       display: block;
       background: #fff;
-      border: 1px solid #cbd5e1;
-      padding: 16px 18px;
+      border: 1px solid #c5c9d0;
+      border-left: 4px solid #3b82f6;
+      padding: 16px;
       text-decoration: none;
-      color: #1a1a1a;
+      color: #111;
       margin-bottom: 10px;
       font-size: 15px;
       font-weight: 700;
     }
     .menu a:hover {
-      background: #f8fafc;
-      border-color: #94a3b8;
+      background: #f1f5f9;
+      border-left-color: #1d4ed8;
     }
     .menu a span {
       display: block;
@@ -46,11 +66,18 @@
       color: #64748b;
       margin-top: 3px;
     }
+    .note {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.5;
+    }
     footer {
       text-align: center;
-      padding: 24px;
+      padding: 20px;
       color: #94a3b8;
       font-size: 12px;
+      border-top: 1px solid #d1d5db;
     }
   </style>
 </head>
@@ -59,10 +86,21 @@
     <h1>日常ツール</h1>
   </header>
   <main>
+    <div class="intro">
+      <p>日常で使う簡単な機能をまとめたツールです。</p>
+      <p>電卓・メモ・単価比較の3つを用意しています。</p>
+      <p>データはすべてブラウザ内に保存されます。サーバーには送信しません。</p>
+    </div>
+
     <div class="menu">
-      <a href="calculator.html">電卓<span>四則演算・％対応</span></a>
-      <a href="notes.html">メモ<span>書いて保存。リロードしても残る</span></a>
-      <a href="compare.html">単価比較<span>値段と数量から単価を出して比較</span></a>
+      <a href="calculator.html">電卓<span>四則演算と％計算ができます</span></a>
+      <a href="notes.html">メモ<span>書いて保存。ページを閉じても残ります</span></a>
+      <a href="compare.html">単価比較<span>値段と数量から1単位あたりの価格を比較</span></a>
+    </div>
+
+    <div class="note">
+      ※ このツールはオフラインでも動作します。<br>
+      ※ ブラウザのデータを削除すると保存内容も消えます。
     </div>
   </main>
   <footer>ローカル保存のみ</footer>
